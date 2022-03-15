@@ -1,22 +1,6 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
-namespace: prometheus
-resources:
-- prometheus/prometheus-ns.yaml
-- prometheus/prometheus-repository.yaml
-- prometheus/prometheus-release.yaml
 
----
-apiVersion: kustomize.config.k8s.io/v1beta1
-kind: Kustomization
-namespace: flux2-system
-resources:
-  - podmonitor.yaml
-configMapGenerator:
-  - name: flux-grafana-dashboards
-    files:
-      - grafana/control-plane.json
-      - grafana/cluster.json
-    options:
-      labels:
-        grafana_dashboard: flux2-system
+bases:
+- prometheus
+- grafana
