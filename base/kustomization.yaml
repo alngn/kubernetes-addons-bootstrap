@@ -12,9 +12,9 @@ resources:
 #- prometheus.yaml
 - prometheus-ns.yaml
 
-helmCharts:
-- name: prometheus-operator
-  repo: https://charts.helm.sh/stable/
-  version: 9.3.2
+helmChartInflationGenerator:
+- chartName: prometheus-operator
+  chartRepoUrl: https://charts.helm.sh/stable/
+  chartVersion: 9.3.2
   releaseName: stable/prometheus-operator
-  namespace: prometheus
+  releaseNamespace: prometheus
