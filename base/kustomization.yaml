@@ -11,13 +11,8 @@ resources:
 #- https://raw.githubusercontent.com/prometheus-operator/prometheus-operator/v0.52.0/example/prometheus-operator-crd/monitoring.coreos.com_thanosrulers.yaml
 #- prometheus.yaml
 - prometheus-ns.yaml
----
-helmCharts:
-- name: prometheus-operator
-  repo: https://charts.helm.sh/stable/
-  version: 9.3.2
-  releaseName: stable/prometheus-operator
-  namespace: prometheus
+- prometheus-chart-def.yaml
+
 
 #helmChartInflationGenerator:
 #- chartName: minecraft

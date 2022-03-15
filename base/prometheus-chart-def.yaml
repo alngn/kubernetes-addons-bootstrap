@@ -1,0 +1,6 @@
+helmCharts:
+- name: prometheus-operator
+  repo: https://charts.helm.sh/stable/
+  version: 9.3.2
+  releaseName: stable/prometheus-operator
+  namespace: prometheus
