@@ -8,7 +8,7 @@ spec:
   chart:
     spec:
       version: 5.0.0
-      chart: fairwinds-stable/polaris
+      chart: polaris
       sourceRef:
         kind: HelmRepository
         name: polaris-repository
