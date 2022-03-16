@@ -1,16 +1,16 @@
 apiVersion: helm.toolkit.fluxcd.io/v2beta1
 kind: HelmRelease
 metadata:
-  name: metric-server-stack
+  name: polaris-stack
 spec:
   interval: 5m
   chart:
     spec:
-      version: 3.8.2
-      chart: metrics-server
+      version: 5.0.0
+      chart: fairwinds-stable/polaris
       sourceRef:
         kind: HelmRepository
-        name: metrics-server
+        name: polaris-repository
       interval: 1m
   install:
     crds: Create
