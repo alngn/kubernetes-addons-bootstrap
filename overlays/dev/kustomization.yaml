@@ -4,5 +4,6 @@ bases:
 - ../../base/prometheus
 - ../../base/grafana
 - ../../base/polaris
+- ../../base/pull-secret-patcher
 #patchesStrategicMerge:
 #- dev-deployment.yaml
