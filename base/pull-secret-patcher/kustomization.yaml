@@ -1,6 +1,5 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
-namespace: imagepullsecret-patcher
 resources:
 - pull-secret-ns.yaml
 - pull-secret-rbac.yaml
