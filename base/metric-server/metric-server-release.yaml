@@ -17,6 +17,8 @@ spec:
   upgrade:
     crds: CreateReplace
   values:
+    args:
+      --kubelet-insecure-tls
     alertmanager:
       enabled: false
     grafana:
