@@ -4,6 +4,7 @@ kind: Kustomization
 bases:
 - ../../base/prometheus
 - ../../base/grafana
+- ../../base/metric-server
 
 #patchesStrategicMerge:
 #- dev-deployment.yaml
