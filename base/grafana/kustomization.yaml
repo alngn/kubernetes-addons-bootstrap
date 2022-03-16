@@ -1,5 +1,10 @@
-apiVersion: kustomize.config.k8s.io/v1beta1
+apiVersion: kustomize.config.k8s.io/v1beta2
 kind: Kustomization
+metadata:
+  name: grafana
+spec:
+  dependsOn:
+    - name: prometheus
 namespace: flux2-system
 resources:
   - podmonitor.yaml
