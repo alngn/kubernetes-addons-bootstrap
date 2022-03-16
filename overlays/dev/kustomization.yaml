@@ -6,7 +6,7 @@ bases:
 - ../../base/grafana
 - ../../base/metric-server
 - ../../base/polaris
-- ../..//base/pull-secret-patcher
+- ../../base/pull-secret-patcher
 
 #patchesStrategicMerge:
 #- dev-deployment.yaml
