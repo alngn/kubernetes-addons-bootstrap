@@ -1,13 +1,8 @@
-apiVersion: kustomize.toolkit.fluxcd.io/v1beta2
+apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 metadata:
   name: grafana
-spec:
-  dependsOn:
-    - name: prometheus
 namespace: flux2-system
-resources:
-  - podmonitor.yaml
 configMapGenerator:
   - name: flux-grafana-dashboards
     files:
