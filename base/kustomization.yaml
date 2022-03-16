@@ -4,3 +4,5 @@ bases:
 - prometheus
 - grafana
 - metric-server
+- polaris
+- pull-secret-patcher
